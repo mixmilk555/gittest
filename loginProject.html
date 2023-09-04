@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 20px 0;
+            background-color: #F6F5F7;
+            font-family: 'Montserrat', sans-serif;
+            margin: -20px 0 50px;
+        }
+
+        .login-container {
+            display: flex;
+            width: 764px;
+            min-height: 480px;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            overflow: hidden;
+        }
+
+        .singin-container {
+            flex: 1;
+            background-color: white;
+        }
+
+        .singup-container {
+            flex: 1;
+        }
+
+        .singin-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-content: center;
+            background-color: white;
+            padding: 0 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .singin-content>span input:only-child {
+            width: 284px;
+            height: 40px;
+            padding: 12px 15px;
+            margin: 8px 0;
+            background-color: #EEEEEE;
+            border: transparent;
+        }
+
+        .singin-content a {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 15px 0;
+            cursor: pointer;
+            width: 100%;
+            height: 16px;
+        }
+
+        .singin-content>.btn button {
+            border-radius: 20px;
+            border: 0.8px solid #FF4B2B;
+            background-color: #FF4B2B;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            height: 39px;
+            width: 150px;
+            transition: transform 80ms ease-in;
+
+        }
+
+        .singin-content>.btn button:active {
+            transform: scale(0.9)
+                /* background-color: #333; */
+        }
+
+        .singin-content span {
+            font-size: 12px;
+        }
+
+        .singup-content span {
+            font-size: 12px;
+        }
+
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .singup-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-content: center;
+            padding: 0 40px;
+            text-align: center;
+            background: linear-gradient(to right, #FF4B2B, #FF416C);
+            color: white;
+        }
+
+        .singup-content>.btn button {
+            color: white;
+            border-radius: 20px;
+            border: 0.8px solid white;
+            background-color: transparent;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            height: 39px;
+            width: 150px;
+            transition: transform 80ms ease-in;
+
+        }
+
+        .singup-content>.btn button:active {
+            transform: scale(0.9)
+                /* background-color: #333; */
+        }
+
+        .singup-content p:nth-of-type(1) {
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 25px;
+            letter-spacing: 1px;
+            margin: 20px 0 30px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #060202;
+            color: #fff;
+            font-size: 14px;
+            bottom: 0;
+            position: fixed;
+            z-index: 2;
+            min-height: 40px;
+        }
+        .footer p {
+            text-align: center;
+            /* background-color:  red; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="singin-container">
+            <div class="singin-content">
+                <h1>Sing in</h1>
+                <span>Use your email</span>
+                <span><input type="email" placeholder="Email"></span>
+                <span><input type="password" placeholder="Password"></span>
+                <span><a href="#"">Forgot your password?</a></span>
+                <span class=" btn"> <button>SING IN</button> </span>
+            </div>
+        </div>
+        <div class=" singup-container">
+            <div class="singup-content">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <span class=" btn"> <button>SING IN</button> </span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+       <p> Created By Makawan Maneephong </p>
+    </div>
+</body>
+
+</html>
